@@ -163,25 +163,36 @@ button {
 .nav-btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 9px;
-    padding: 12px 20px;
-    border-radius: 50px;
-    background: var(--heading);
-    color: white;
+    min-height: 44px;
+    padding: 0 20px;
+    border-radius: 100px;
+    background: #17152A;
+    color: #FFFFFF;
     font-size: 13px;
     font-weight: 700;
-    transition: 0.3s ease;
-}
-
-.nav-btn:hover {
-    background: var(--primary);
-    transform: translateY(-2px);
+    white-space: nowrap;
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
 .nav-btn i {
     font-size: 11px;
+    transition: transform 0.25s ease;
 }
 
+.nav-btn:hover {
+    background: #6C3BFF;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(108, 59, 255, 0.2);
+}
+
+.nav-btn:hover i {
+    transform: translateX(3px);
+}
 
 /* ================= MOBILE BUTTON ================= */
 
